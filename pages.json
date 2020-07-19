@@ -1,0 +1,25 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "胰腺问卷"
+			}
+		}
+	    ,{
+            "path" : "pages/index2/index2",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/jibenwenti/jibenwenti",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "胰腺问卷",
+		"navigationStyle":"custom",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
