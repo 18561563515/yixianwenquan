@@ -1182,25 +1182,340 @@
 						</view>
 					</swiper-item>
 					<swiper-item>
-						<view class="swiper-item">10</view>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[59].question}}</text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi " >
+								<view class="danxuan w100 justify-content autoH1" :class="currentP11==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP11"
+								 :key="index" @click="chooseDanXuanP11(index)" >
+									<view>{{i.sign}}</view>
+									
+									<label v-if="i.sign=='C'" style="flex: 1;">
+										<text>根据胰管直径决定是否放置，</text>
+										<text>您选择放置胰管支架的胰管直径</text>
+										<label for="" style="display: flex;flex-direction: row;">
+											<text>是≤</text>
+											<input type="number" value="" placeholder="填写数字" style="width: 150rpx;display: inline;" class="xuanxiangbuchong" v-model="i.txt"/>
+											<text>mm</text>
+										</label>
+										
+										
+									</label>
+									
+									<text v-else>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP11"></view>
+							</view>
+						</view>
 					</swiper-item>
 					<swiper-item>
-						<view class="swiper-item">11</view>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[60].question}}</text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP12==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP12"
+								 :key="index" @click="chooseDanXuanP12(index)">
+									<view>{{i.sign}}</view>
+									<text>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP12"></view>
+							</view>
+						</view>
 					</swiper-item>
 					<swiper-item>
-						<view class="swiper-item">12</view>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[61].question}}</text>
+							</TIBANA>
+							<image src="../../static/fenzhi1.png" mode="widthFix" class="fenzhi1"></image>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP14==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP14"
+								 :key="index" @click="chooseDanXuanP14(index)">
+									<view>{{i.sign}}</view>
+									<text v-if="i.sign=='C'">其他技术</text>
+									<input type="text" value="" v-model="i.txt" placeholder="请具体说明" v-if="i.sign=='C'" class="xuanxiangbuchong"/>
+									<text v-else>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP14"></view>
+							</view>
+						</view>
 					</swiper-item>
 					<swiper-item>
-						<view class="swiper-item">13</view>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<!-- <TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[62].question}}</text>
+							</TIBANA> -->
+							<image src="../../static/fenzhi2.png" mode="widthFix" class="fenzhi2"></image>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP15==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP15"
+								 :key="index" @click="chooseDanXuanP15(index)">
+									<view>{{i.sign}}</view>
+									<text v-if="i.sign=='E'">其他技术</text>
+									<input type="text" value="" v-model="i.txt" placeholder="请具体说明" v-if="i.sign=='E'" class="xuanxiangbuchong"/>
+									<text v-else>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP15"></view>
+							</view>
+						</view>
 					</swiper-item>
 					<swiper-item>
-						<view class="swiper-item">14</view>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<!-- <TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[63].question}}</text>
+							</TIBANA> -->
+							<image src="../../static/fenzhi3.png" mode="widthFix" class="fenzhi3"></image>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP16==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP16"
+								 :key="index" @click="chooseDanXuanP16(index)">
+									<view>{{i.sign}}</view>
+									<text v-if="i.sign=='E'">其他技术</text>
+									<input type="text" value="" v-model="i.txt" placeholder="请具体说明" v-if="i.sign=='E'" class="xuanxiangbuchong"/>
+									<text v-else>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP16"></view>
+							</view>
+						</view>
 					</swiper-item>
 					<swiper-item>
-						<view class="swiper-item">15</view>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[65].question}}</text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP17==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP17"
+								 :key="index" @click="chooseDanXuanP17(index)">
+									<view>{{i.sign}}</view>
+									<text v-if="i.sign=='E'">使用其它材料</text>
+									<input type="text" value="" v-model="i.txt" placeholder="请具体说明" v-if="i.sign=='E'" class="xuanxiangbuchong"/>
+									<text v-else>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP17"></view>
+							</view>
+						</view>
 					</swiper-item>
 					<swiper-item>
-						<view class="swiper-item">16</view>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[66].question}}</text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP18==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP18"
+								 :key="index" @click="chooseDanXuanP18(index)">
+									<view>{{i.sign}}</view>
+									<text>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP18"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[67].question}}</text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP19==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP19"
+								 :key="index" @click="chooseDanXuanP19(index)">
+									<view>{{i.sign}}</view>
+									<text>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP19"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[68].question}}</text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP20==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP20"
+								 :key="index" @click="chooseDanXuanP20(index)">
+									<view>{{i.sign}}</view>
+									<text>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP20"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[69].question}}<br><text style="color: #808080;width: 100%;display: block;text-align: right;">（可多选）</text></text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi">
+								<view class="danxuan w100 justify-content jianbian" :class="{'jianbian-active':i.fuxuan}" v-for="(i,index) in danxuanarrP21"
+								 :key="index" @click="chooseDanXuanP21(index)">
+									<view>{{i.sign}}</view>
+									<text v-if="i.sign == 'E'">其他位置</text>
+									<text v-else>{{i.txt}}</text>
+									<input type="text" value="" v-if="i.sign=='E'" class="xuanxiangbuchong" placeholder="请具体描述" v-model="i.txt"/>
+								</view>
+							</view>
+							
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP21"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[70].question}}</text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP22==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP22"
+								 :key="index" @click="chooseDanXuanP22(index)">
+									<view>{{i.sign}}</view>
+									<text v-if="i.sign=='E'">其他</text>
+									<input type="text" value="" v-model="i.txt" placeholder="请具体说明" v-if="i.sign=='E'" class="xuanxiangbuchong"/>
+									<text v-else>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP22"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[71].question}}</text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP23==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP23"
+								 :key="index" @click="chooseDanXuanP23(index)">
+									<view>{{i.sign}}</view>
+									<text>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP23"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[72].question}}</text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP24==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP24"
+								 :key="index" @click="chooseDanXuanP24(index)">
+									<view>{{i.sign}}</view>
+									<text>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP24"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[73].question}}<!-- <br><text style="color: #808080;width: 100%;display: block;text-align: right;">（可多选）</text> --></text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi">
+								<view class="danxuan w100 justify-content jianbian" :class="{'jianbian-active':i.fuxuan}" v-for="(i,index) in danxuanarrP25"
+								 :key="index" @click="chooseDanXuanP25(index)">
+									<view>{{i.sign}}</view>
+									<text>{{i.txt}}</text>
+								</view>
+							</view>
+							
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP25"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[74].question}}</text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP26==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP26"
+								 :key="index" @click="chooseDanXuanP26(index)">
+									<view>{{i.sign}}</view>
+									<text v-if="i.sign=='D'">都不是</text>
+									<input type="text" value="" v-model="i.txt" placeholder="请简要描述" v-if="i.sign=='D'" class="xuanxiangbuchong"/>
+									<text v-else>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP26"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
+							<TIBANA class="tibanA">
+								<text class="wenti-txt">{{$allArr[75].question}}</text>
+							</TIBANA>
+							<view class="danxuan-box chuizhi" >
+								<view class="danxuan justify-content w100" :class="currentP27==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP27"
+								 :key="index" @click="chooseDanXuanP27(index)">
+									<view>{{i.sign}}</view>
+									<text>{{i.txt}}</text>
+								</view>
+							</view>
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnD"></view>
+								<view class="xiayiti" @click="checkP27"></view>
+							</view>
+						</view>
 					</swiper-item>
 				</swiper>
 			</swiper-item>
@@ -2332,7 +2647,7 @@
 					},
 					{
 						sign: 'C',
-						txt: '根据胰管直径决定是否放置，您选择放置胰管支架的胰管直径是≤[填写数字]mm'
+						txt: ''
 					}
 				],
 				danxuanarrP12:[
@@ -2378,7 +2693,7 @@
 					},
 					{
 						sign: 'C',
-						txt: '其他技术[请具体说明]'
+						txt: ''
 					}
 				],
 				danxuanarrP15:[
@@ -2400,7 +2715,7 @@
 					},
 					{
 						sign: 'E',
-						txt: '其他技术[请具体说明]'
+						txt: ''
 					}
 				],
 				danxuanarrP16:[
@@ -2422,7 +2737,7 @@
 					},
 					{
 						sign: 'E',
-						txt: '其他技术[请具体说明]'
+						txt: ''
 					}
 				],
 				danxuanarrP17:[
@@ -2444,7 +2759,7 @@
 					},
 					{
 						sign: 'E',
-						txt: '使用其它材料[请具体说明]'
+						txt: ''
 					},
 					{
 						sign: 'F',
@@ -2520,23 +2835,28 @@
 				danxuanarrP21:[
 					{
 						sign: 'A',
-						txt: '胰肠吻合口后方'
+						txt: '胰肠吻合口后方',
+						fuxuan:false
 					},
 					{
 						sign: 'B',
-						txt: '胰肠吻合口前方'
+						txt: '胰肠吻合口前方',
+						fuxuan:false
 					},
 					{
 						sign: 'C',
-						txt: '胰肠吻合口上缘'
+						txt: '胰肠吻合口上缘',
+						fuxuan:false
 					},
 					{
 						sign: 'D',
-						txt: '胰肠吻合口下缘'
+						txt: '胰肠吻合口下缘',
+						fuxuan:false
 					},
 					{
 						sign: 'E',
-						txt: '其他位置[请具体描述]'
+						txt: '',
+						fuxuan:false
 					}
 				],
 				danxuanarrP22:[
@@ -2558,7 +2878,7 @@
 					},
 					{
 						sign: 'E',
-						txt: '其他[请具体说明]'
+						txt: ''
 					}
 				],
 				danxuanarrP23:[
@@ -2608,27 +2928,33 @@
 				danxuanarrP25:[
 					{
 						sign: 'A',
-						txt: '引流液的量'
+						txt: '引流液的量',
+						fuxuan:false
 					},
 					{
 						sign: 'B',
-						txt: '引流液的淀粉酶值'
+						txt: '引流液的淀粉酶值',
+						fuxuan:false
 					},
 					{
 						sign: 'C',
-						txt: '引流液的外观性质'
+						txt: '引流液的外观性质',
+						fuxuan:false
 					},
 					{
 						sign: 'D',
-						txt: '引流管放置时间'
+						txt: '引流管放置时间',
+						fuxuan:false
 					},
 					{
 						sign: 'E',
-						txt: '引流液微生物培养结果'
+						txt: '引流液微生物培养结果',
+						fuxuan:false
 					},
 					{
 						sign: 'F',
-						txt: '病人的一般情况'
+						txt: '病人的一般情况',
+						fuxuan:false
 					}
 				],
 				danxuanarrP26:[
@@ -2646,7 +2972,7 @@
 					},
 					{
 						sign: 'D',
-						txt: '都不是（请简要描述）'
+						txt: ''
 					}
 				],
 				danxuanarrP27:[
@@ -3801,6 +4127,393 @@
 					})
 				}
 			},
+			
+			chooseDanXuanP11(index) {
+				this.currentP11 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P11') {
+						s.val = this.danxuanarrP11[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP11(){
+				if(this.currentP11 == 2){
+					for (let s of this.$allArr) {
+						if (s.sid == 'P11') {
+							s.val = this.danxuanarrP11[2].txt
+						}
+					}
+				}
+				if (this.$allArr[59].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案或者填写答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP12(index) {
+				this.currentP12 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P12') {
+						s.val = this.danxuanarrP12[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP12(){
+				if (this.$allArr[60].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP14(index) {
+				this.currentP14 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P14') {
+						s.val = this.danxuanarrP14[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP14(){
+				if(this.currentP14 == 2){
+					for (let s of this.$allArr) {
+						if (s.sid == 'P14') {
+							s.val = this.danxuanarrP14[2].txt
+						}
+					}
+				}
+				if (this.$allArr[62].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案或者填写答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP15(index) {
+				this.currentP15 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P15') {
+						s.val = this.danxuanarrP15[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP15(){
+				if(this.currentP15 == 4){
+					for (let s of this.$allArr) {
+						if (s.sid == 'P15') {
+							s.val = this.danxuanarrP15[4].txt
+						}
+					}
+				}
+				if (this.$allArr[63].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案或者填写答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP16(index) {
+				this.currentP16 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P16') {
+						s.val = this.danxuanarrP16[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP16(){
+				if(this.currentP16 == 4){
+					for (let s of this.$allArr) {
+						if (s.sid == 'P16') {
+							s.val = this.danxuanarrP16[4].txt
+						}
+					}
+				}
+				if (this.$allArr[64].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案或者填写答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP17(index) {
+				this.currentP17 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P17') {
+						s.val = this.danxuanarrP17[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP17(){
+				if(this.currentP17 == 4){
+					for (let s of this.$allArr) {
+						if (s.sid == 'P17') {
+							s.val = this.danxuanarrP17[4].txt
+						}
+					}
+				}
+				if (this.$allArr[65].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案或者填写答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP18(index) {
+				this.currentP18 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P18') {
+						s.val = this.danxuanarrP18[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP18(){
+				if (this.$allArr[66].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP19(index) {
+				this.currentP19 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P19') {
+						s.val = this.danxuanarrP19[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP19(){
+				if (this.$allArr[67].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP20(index) {
+				this.currentP20 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P20') {
+						s.val = this.danxuanarrP20[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP20(){
+				if (this.$allArr[68].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP21(index) {
+				this.danxuanarrP21[index].fuxuan = !this.danxuanarrP21[index].fuxuan
+				if (!this.danxuanarrP21[4].fuxuan) {
+					this.danxuanarrP21[4].txt = ''
+				}
+				
+			},
+			checkP21(){
+				if (this.danxuanarrP21[0].fuxuan || this.danxuanarrP21[1].fuxuan || this.danxuanarrP21[2].fuxuan || this.danxuanarrP21[3].fuxuan || this.danxuanarrP21[4].fuxuan) {
+					
+					//存储
+					let str = ''
+					
+					for (let s of this.danxuanarrP21) {
+						if(s.fuxuan){
+							str+=(s.sign+s.txt+' ')
+						}
+					}
+					this.$allArr[69].val = str
+					this.lunboCurrentD++
+					console.log(this.$allArr[69].val)
+				}else{
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+				
+			},
+			
+			chooseDanXuanP22(index) {
+				this.currentP22 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P22') {
+						s.val = this.danxuanarrP22[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP22(){
+				if(this.currentP22 == 4){
+					for (let s of this.$allArr) {
+						if (s.sid == 'P22') {
+							s.val = this.danxuanarrP22[4].txt
+						}
+					}
+				}
+				if (this.$allArr[70].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案或者填写答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP23(index) {
+				this.currentP23 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P23') {
+						s.val = this.danxuanarrP23[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP23(){
+				if (this.$allArr[71].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP24(index) {
+				this.currentP24 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P24') {
+						s.val = this.danxuanarrP24[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP24(){
+				if (this.$allArr[72].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP25(index) {
+				this.danxuanarrP25[index].fuxuan = !this.danxuanarrP25[index].fuxuan
+				
+				
+			},
+			checkP25(){
+				if (this.danxuanarrP25[0].fuxuan || this.danxuanarrP25[1].fuxuan || this.danxuanarrP25[2].fuxuan || this.danxuanarrP25[3].fuxuan || this.danxuanarrP25[4].fuxuan|| this.danxuanarrP25[5].fuxuan) {
+					
+					//存储
+					let str = ''
+					
+					for (let s of this.danxuanarrP25) {
+						if(s.fuxuan){
+							str+=(s.sign+s.txt+' ')
+						}
+					}
+					this.$allArr[73].val = str
+					this.lunboCurrentD++
+					console.log(this.$allArr[73].val)
+				}else{
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+				
+			},
+			
+			chooseDanXuanP26(index) {
+				this.currentP26 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P26') {
+						s.val = this.danxuanarrP26[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP26(){
+				if(this.currentP26 == 3){
+					for (let s of this.$allArr) {
+						if (s.sid == 'P26') {
+							s.val = this.danxuanarrP26[3].txt
+						}
+					}
+				}
+				if (this.$allArr[74].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案或者填写答案',
+						showCancel: false
+					})
+				}
+			},
+			
+			chooseDanXuanP27(index) {
+				this.currentP27 = index
+				for (let s of this.$allArr) {
+					if (s.sid == 'P27') {
+						s.val = this.danxuanarrP27[index].txt
+					}
+				}
+				console.log(this.$allArr)
+			},
+			checkP27(){
+				if (this.$allArr[75].val) {
+					this.lunboCurrentD++
+				} else {
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+			},
 		}
 	}
 </script>
@@ -3977,5 +4690,25 @@
 		text{
 			flex: 1;
 		}
+	}
+	.autoH1{
+		height: auto !important;
+		// flex: 1;
+		display: flex;
+		padding: 30rpx 0;
+	}
+	.fenzhi1{
+		width: 270rpx;
+		height: 72rpx;
+	}
+	.fenzhi2{
+		width: 439rpx;
+		height: 93rpx;
+		margin: 30rpx 0;
+	}
+	.fenzhi3{
+		width: 480rpx;
+		height: 93rpx;
+		margin: 30rpx 0;
 	}
 </style>
