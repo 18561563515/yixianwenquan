@@ -1,7 +1,7 @@
 <template>
 	<view class="mask">
 
-		<swiper :indicator-dots="false" :autoplay="false" :interval="300" :duration="300" class="swiper" :vertical="false" :current="lunboCurrentA" :disable-touch="false" @change="changeCurrentA">
+		<swiper :indicator-dots="false" :autoplay="false" :interval="300" :duration="300" class="swiper" :vertical="false" :current="lunboCurrentA" :disable-touch="true" @change="changeCurrentA">
 			<swiper-item>
 				<view class="swiper-item">
 					<BGTOP2></BGTOP2>
@@ -19,8 +19,8 @@
 			</swiper-item>
 			<swiper-item>
 				<view class="swiper-item bg1">
-					<swiper :indicator-dots="true" :autoplay="false" :interval="300" :duration="300" class="swiper" :vertical="true"
-					 :disable-touch="false" :current="lunboCurrent" @change="changeCurrent">
+					<swiper :indicator-dots="false" :autoplay="false" :interval="300" :duration="300" class="swiper" :vertical="true"
+					 :disable-touch="true" :current="lunboCurrent" @change="changeCurrent">
 						<swiper-item>
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
@@ -298,9 +298,9 @@
 					</view>
 				</view>
 			</swiper-item>
-			<swiper-item>
-				<swiper :indicator-dots="true" :autoplay="false" :interval="300" :duration="300" class="swiper" :vertical="true"
-					 :disable-touch="false" :current="lunboCurrentB" @change="changeCurrentB">
+			<swiper-item class="bg1">
+				<swiper :indicator-dots="false" :autoplay="false" :interval="300" :duration="300" class="swiper" :vertical="true"
+					 :disable-touch="true" :current="lunboCurrentB" @change="changeCurrentB">
 					<swiper-item>
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
@@ -590,9 +590,9 @@
 					</view>
 				</view>
 			</swiper-item>
-			<swiper-item>
-				<swiper :indicator-dots="true" :autoplay="false" :interval="300" :duration="300" class="swiper" :vertical="true"
-					 :disable-touch="false" :current="lunboCurrentC" @change="changeCurrentC">
+			<swiper-item class="bg1">
+				<swiper :indicator-dots="false" :autoplay="false" :interval="300" :duration="300" class="swiper" :vertical="true"
+					 :disable-touch="true" :current="lunboCurrentC" @change="changeCurrentC">
 					<swiper-item>
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai3.png" mode="widthFix" class="pic"></image>
@@ -978,12 +978,11 @@
 					</view>
 				</view>
 			</swiper-item>
-			<swiper-item>
-				<swiper :indicator-dots="true" :autoplay="false" :interval="300" :duration="0" class="swiper" :vertical="true"
-					 :disable-touch="false" :current="lunboCurrentD" @change="changeCurrentD">
-					<swiper-item>
+			<swiper-item class="bg1">
+				<swiper :indicator-dots="false" :autoplay="false" :interval="300" :duration="300" class="swiper" :vertical="true"
+					 :disable-touch="true" :current="lunboCurrentD" @change="changeCurrentD">
+					<swiper-item >
 						<view class="swiper-item">
-							<BGBOTTOMA></BGBOTTOMA>
 							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
 								<text class="wenti-txt">{{$allArr[49].question}}</text>
@@ -1520,10 +1519,10 @@
 					</swiper-item>
 				</swiper>
 			</swiper-item>
-			<swiper-item>
+			<swiper-item class="bg1">
 				<view class="swiper-item endpage">
 					<image src="../../static/wancheng.png" mode="widthFix"></image>
-					<view class="fenxiang"></view>
+					<view class="fenxiang" @click="shareBtn"></view>
 				</view>
 			</swiper-item>
 		</swiper>
@@ -4515,7 +4514,7 @@
 			},
 			checkP27(){
 				if (this.$allArr[75].val) {
-					this.lunboCurrentD++
+					this.lunboCurrentA++
 				} else {
 					uni.showModal({
 						content: '请选择答案',
@@ -4523,6 +4522,19 @@
 					})
 				}
 			},
+			
+			shareBtn(){
+				if(window.parent.saveSurvey){
+					console.log(this.$allArr)
+						window.parent.saveSurvey('胰腺问卷', this.$allArr,'胰十二指肠切除术后消化道重建全国调查' );
+					}else{
+						console.log(this.$allArr)
+						uni.showModal({
+							content:'提交失败',
+							showCancel:false
+						})
+					}
+			}
 		}
 	}
 </script>
