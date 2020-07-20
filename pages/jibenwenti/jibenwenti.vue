@@ -983,6 +983,7 @@
 					 :disable-touch="false" :current="lunboCurrentD" @change="changeCurrentD">
 					<swiper-item>
 						<view class="swiper-item">
+							<BGBOTTOMA></BGBOTTOMA>
 							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
 								<text class="wenti-txt">{{$allArr[49].question}}</text>
@@ -1519,6 +1520,12 @@
 					</swiper-item>
 				</swiper>
 			</swiper-item>
+			<swiper-item>
+				<view class="swiper-item endpage">
+					<image src="../../static/wancheng.png" mode="widthFix"></image>
+					<view class="fenxiang"></view>
+				</view>
+			</swiper-item>
 		</swiper>
 	</view>
 </template>
@@ -1526,6 +1533,7 @@
 <script>
 	import BGTOP2 from '@/components/index/bgTop2.vue'
 	import BGBOTTOM from '@/components/fenlei/bgJibenwenti.vue'
+	import BGBOTTOMA from '@/components/fenlei/bgJibenwentiA.vue'
 	import FENGMIAN from '@/components/fengmian.vue'
 	import TIBANA from '@/components/tibanA/tibanA.vue'
 	export default {
@@ -3006,6 +3014,7 @@
 		components: {
 			BGTOP2,
 			BGBOTTOM,
+			BGBOTTOMA,
 			FENGMIAN,
 			TIBANA
 		},
@@ -4710,5 +4719,12 @@
 		width: 480rpx;
 		height: 93rpx;
 		margin: 30rpx 0;
+	}
+	
+	.fenxiang{
+		width: 107rpx;
+		height: 108rpx;
+		background: url(../../static/share.png) no-repeat center center;
+		background-size: 100%;
 	}
 </style>
