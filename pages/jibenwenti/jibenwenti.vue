@@ -25,7 +25,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您所属的医院是否为<br>大学附属教学医院和三级医院：</text>
+									<text class="wenti-txt">您所属的医院是否为大学附属教学医院和三级医院：</text>
 								</TIBANA>
 								<view class="danxuan-box">
 									<view class="danxuan" :class="currentB1==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarr"
@@ -36,7 +36,7 @@
 								</view>
 								<view class="line"></view>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您的医疗团队/医疗组<br>手术医生的性别构成：</text>
+									<text class="wenti-txt">您的医疗团队/医疗组手术医生的性别构成：</text>
 								</TIBANA>
 								<view class="danxuan-box">
 									<view class="danxuan jianbian" v-for="(i,index) in tianxieB2" :key="index">
@@ -54,7 +54,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您的医疗团队/医疗组<br>手术医生的年龄分布：</text>
+									<text class="wenti-txt">您的医疗团队/医疗组手术医生的年龄分布：</text>
 								</TIBANA>
 								<view class="danxuan-box chuizhi">
 									<view class="danxuan w100 jianbian" v-for="(i,index) in tianxieB3" :key="index">
@@ -75,7 +75,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您的医疗团队/医疗组<br>手术医生的学历分布：</text>
+									<text class="wenti-txt">您的医疗团队/医疗组手术医生的学历分布：</text>
 								</TIBANA>
 								<view class="danxuan-box chuizhi">
 									<view class="danxuan w100 jianbian" v-for="(i,index) in tianxieB4" :key="index">
@@ -96,7 +96,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您所在医院每年<br>胰十二指肠切除术手术量：</text>
+									<text class="wenti-txt">您所在医院每年胰十二指肠切除术手术量：</text>
 								</TIBANA>
 								<view class="danxuan-box chuizhi">
 									<view class="danxuan w100 justify-content" :class="currentB5==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrB5"
@@ -116,7 +116,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您每年参与的<br>胰十二指肠切除术大约有多少：</text>
+									<text class="wenti-txt">您每年参与的胰十二指肠切除术大约有多少：</text>
 								</TIBANA>
 								<view class="danxuan-box chuizhi">
 									<view class="danxuan w100 justify-content" :class="currentB6==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrB6"
@@ -136,7 +136,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您参与/主刀的<br>胰十二指肠切除术通常是：</text>
+									<text class="wenti-txt">您参与/主刀的胰十二指肠切除术通常是：</text>
 								</TIBANA>
 								<view class="danxuan-box chuizhi">
 									<view class="danxuan w100 justify-content" :class="currentB7==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrB7"
@@ -156,7 +156,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">近3年来，您的团队所在医院每年开展<br>腹腔镜胰十二指肠切除术的量是多少？</text>
+									<text class="wenti-txt">近3年来，您的团队所在医院每年开展腹腔镜胰十二指肠切除术的量是多少？</text>
 								</TIBANA>
 								<view class="danxuan-box chuizhi">
 									<view class="danxuan w100 justify-content" :class="currentB8==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrB8"
@@ -176,7 +176,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您所参与的胰十二指肠切除术<br>消化道离断顺序通常是：</text>
+									<text class="wenti-txt">您所参与的胰十二指肠切除术消化道离断顺序通常是：</text>
 								</TIBANA>
 								<view class="danxuan-box chuizhi">
 									<view class="danxuan w100 justify-content" :class="currentB9==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrB9"
@@ -196,7 +196,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您所参与的胰十二指肠切除术<br>消化道重建顺序通常是：</text>
+									<text class="wenti-txt">您所参与的胰十二指肠切除术消化道重建顺序通常是：</text>
 								</TIBANA>
 								<view class="danxuan-box chuizhi">
 									<view class="danxuan w100 justify-content" :class="currentB10==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrB10"
@@ -216,7 +216,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您所参与的胰十二指肠<br>切除术消化道重建方法是：</text>
+									<text class="wenti-txt">您所参与的胰十二指肠切除术消化道重建方法是：</text>
 								</TIBANA>
 								<view class="danxuan-box chuizhi">
 									<view class="danxuan w100 justify-content" :class="currentB11==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrB11"
@@ -236,7 +236,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您所参与的胰十二指肠切除术<br>是否常规放置腹腔引流管</text>
+									<text class="wenti-txt">您所参与的胰十二指肠切除术是否常规放置腹腔引流管</text>
 								</TIBANA>
 								<view class="danxuan-box ">
 									<view class="danxuan " :class="currentB12==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrB12"
@@ -247,7 +247,7 @@
 								</view>
 								<view class="line"></view>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您团队胰十二指肠切除术的患者在出院<br>前是否常规进行全腹部增强CT检查</text>
+									<text class="wenti-txt">您团队胰十二指肠切除术的患者在出院前是否常规进行全腹部增强CT检查</text>
 								</TIBANA>
 								<view class="danxuan-box ">
 									<view class="danxuan" :class="currentB13==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrB13"
@@ -266,7 +266,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">目前您所在团队是否常规单独登记<br>（住院病例记录之外）每一例<br>胰十二指肠切除术后并发症</text>
+									<text class="wenti-txt">目前您所在团队是否常规单独登记（住院病例记录之外）每一例胰十二指肠切除术后并发症</text>
 								</TIBANA>
 								<view class="danxuan-box chuizhi">
 									<view class="danxuan w100 justify-content" :class="currentB14==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrB14"
@@ -305,7 +305,7 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参与的胰腺癌行胰十二指肠<br>切除术胆道离断部位通常是：</text>
+								<text class="wenti-txt">您所参与的胰腺癌行胰十二指肠切除术胆道离断部位通常是：</text>
 							</TIBANA>
 							<view class="danxuan-box chuizhi">
 								<view class="danxuan w100 justify-content" :class="currentH1==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrH1"
@@ -325,7 +325,7 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所在医疗组的胰腺癌行胰十二<br>指肠切除术是否常规术中胆道切<br>缘快速病理检查：</text>
+								<text class="wenti-txt">您所在医疗组的胰腺癌行胰十二指肠切除术是否常规术中胆道切缘快速病理检查：</text>
 							</TIBANA>
 							<view class="danxuan-box chuizhi">
 								<view class="danxuan w100 justify-content" :class="currentH2==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrH2"
@@ -345,7 +345,7 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参/主刀与的胰十二指肠切除术<br>胆道离断方法通常是：</text>
+								<text class="wenti-txt">您所参/主刀与的胰十二指肠切除术胆道离断方法通常是：</text>
 							</TIBANA>
 							<view class="danxuan-box chuizhi">
 								<view class="danxuan w100 justify-content" :class="currentH3==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrH3"
@@ -365,7 +365,7 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参与/主刀的胰十二指肠<br>切除术胆肠吻合通常是：</text>
+								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除术胆肠吻合通常是：</text>
 							</TIBANA>
 							<view class="danxuan-box chuizhi">
 								<view class="danxuan w100 justify-content" :class="currentH4==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrH4"
@@ -445,7 +445,7 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除<br>术胆肠吻合选择（单层/双层；间断/<br>连续）缝合方式的依据通常是?</text>
+								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除术胆肠吻合选择（单层/双层；间断/连续）缝合方式的依据通常是?</text>
 							</TIBANA>
 							<view class="danxuan-box chuizhi">
 								<view class="danxuan w100 justify-content" :class="currentH8==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrH8"
@@ -465,7 +465,7 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参与/主刀的胰十二指肠切<br>除术胆肠吻合采用的缝线通常是 <br><text style="color: #808080;width: 100%;display: block;text-align: right;">（可多选）</text></text>
+								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除术胆肠吻合采用的缝线通常是 <text style="color: #808080;width: 100%;display: block;text-align: right;">（可多选）</text></text>
 							</TIBANA>
 							<view class="danxuan-box chuizhi">
 								<view class="danxuan w100 justify-content jianbian" :class="{'jianbian-active':i.fuxuan}" v-for="(i,index) in danxuanarrH9"
@@ -487,7 +487,7 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除术<br>胆肠吻合（可吸收/不可吸收或者单股<br>线/编织线）缝线选择依据通常是?</text>
+								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除术胆肠吻合（可吸收/不可吸收或者单股线/编织线）缝线选择依据通常是?</text>
 							</TIBANA>
 							<view class="danxuan-box chuizhi">
 								<view class="danxuan w100 justify-content" :class="currentH10==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrH10"
@@ -507,7 +507,7 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除<br>术胆肠吻合术中胆管支架管<br>放置通常是?</text>
+								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除术胆肠吻合术中胆管支架管放置通常是?</text>
 							</TIBANA>
 							<view class="danxuan-box chuizhi">
 								<view class="danxuan w100 justify-content" :class="currentH11==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrH11"
@@ -527,7 +527,7 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您术中记录过您所参与/主刀的胰十<br>二指肠切除术的胆肠吻合时间吗？</text>
+								<text class="wenti-txt">您术中记录过您所参与/主刀的胰十二指肠切除术的胆肠吻合时间吗？</text>
 							</TIBANA>
 							<view class="danxuan-box ">
 								<view class="danxuan " :class="currentH12==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrH12"
@@ -538,7 +538,7 @@
 							</view>
 							<view class="line"></view>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参与/主刀的胰十二指肠切<br>除术的胆肠吻合时间通常为?</text>
+								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除术的胆肠吻合时间通常为?</text>
 							</TIBANA>
 							<view class="danxuan-box " style="flex-wrap: wrap;">
 								<view class="danxuan" :class="currentH13==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrH13"
@@ -558,7 +558,7 @@
 							<view class="swiper-item">
 								<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
 								<TIBANA class="tibanA">
-									<text class="wenti-txt">您所参与/主刀的胰十二指肠切除<br>术胆肠吻合口附近放置引流管通常是?</text>
+									<text class="wenti-txt">您所参与/主刀的胰十二指肠切除术胆肠吻合口附近放置引流管通常是?</text>
 								</TIBANA>
 								<view class="danxuan-box chuizhi">
 									<view class="danxuan w100 justify-content" :class="currentH14==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrH14"
@@ -597,21 +597,31 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai3.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参与/主刀的胰腺癌行胰十二指<br>肠切除术通常是PD还是PPPD？</text>
+								<text class="wenti-txt">您所参与/主刀的胰腺癌行胰十二指肠切除术通常是PD还是PPPD？</text>
 							</TIBANA>
-							<view class="danxuan-box " style="flex-wrap: wrap;">
-								<view class="danxuan " :class="currentG1==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG1"
+							<view class="danxuan-box chuizhi" style="flex-wrap: wrap;">
+								<view class="danxuan w100 justify-content" :class="currentG1==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG1"
 								 :key="index" @click="chooseDanXuanG1(index)">
 									<view>{{i.sign}}</view>
 									<text>{{i.txt}}</text>
 								</view>
 							</view>
-							<view class="line"></view>
+							<view class="danxuan-box mg">
+								<!-- <view class="shangyiti" @click="backBtnC"></view> -->
+								<view class="xiayiti" @click="checkG1"></view>
+							</view>
+							<!-- <view class="line"></view> -->
+							
+						</view>
+					</swiper-item>
+					<swiper-item>	
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai3.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参与/主刀的保留幽门胰十<br>二指肠切除术十二指肠保留的长<br>度通常是：</text>
+								<text class="wenti-txt">您所参与/主刀的保留幽门胰十二指肠切除术十二指肠保留的长度通常是：</text>
 							</TIBANA>
-							<view class="danxuan-box " style="flex-wrap: wrap;">
-								<view class="danxuan" :class="currentG2==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG2"
+							<view class="danxuan-box  chuizhi" style="flex-wrap: wrap;">
+								<view class="danxuan w100 justify-content" :class="currentG2==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG2"
 								 :key="index" @click="chooseDanXuanG2(index)">
 									<view>{{i.sign}}</view>
 									<text>{{i.txt}}</text>
@@ -619,7 +629,7 @@
 							</view>
 							<view class="danxuan-box ">
 								<view class="shangyiti" @click="backBtnC"></view>
-								<view class="xiayiti" @click="checkG1G2"></view>
+								<view class="xiayiti" @click="checkG2"></view>
 							</view>
 						</view>
 					</swiper-item>
@@ -627,21 +637,30 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai3.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除术<br>胃切除的范围通常是：</text>
+								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除术胃切除的范围通常是：</text>
 							</TIBANA>
-							<view class="danxuan-box " style="flex-wrap: wrap;">
-								<view class="danxuan " :class="currentG3==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG3"
+							<view class="danxuan-box chuizhi" style="flex-wrap: wrap;">
+								<view class="danxuan w100 justify-content " :class="currentG3==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG3"
 								 :key="index" @click="chooseDanXuanG3(index)">
 									<view>{{i.sign}}</view>
 									<text>{{i.txt}}</text>
 								</view>
 							</view>
-							<view class="line"></view>
+							<!-- <view class="line"></view> -->
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnC"></view>
+								<view class="xiayiti" @click="checkG3"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai3.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">您所参与/主刀的胰十二指肠切<br>除术胃肠吻合口距离胆肠吻合口<br>通常是：</text>
+								<text class="wenti-txt">您所参与/主刀的胰十二指肠切除术胃肠吻合口距离胆肠吻合口通常是：</text>
 							</TIBANA>
-							<view class="danxuan-box " style="flex-wrap: wrap;">
-								<view class="danxuan" :class="currentG4==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG4"
+							<view class="danxuan-box chuizhi" style="flex-wrap: wrap;">
+								<view class="danxuan w100 justify-content" :class="currentG4==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG4"
 								 :key="index" @click="chooseDanXuanG4(index)">
 									<view>{{i.sign}}</view>
 									<text>{{i.txt}}</text>
@@ -649,7 +668,7 @@
 							</view>
 							<view class="danxuan-box ">
 								<view class="shangyiti" @click="backBtnC"></view>
-								<view class="xiayiti" @click="checkG3G4"></view>
+								<view class="xiayiti" @click="checkG4"></view>
 							</view>
 						</view>
 					</swiper-item>
@@ -659,14 +678,23 @@
 							<TIBANA class="tibanA">
 								<text class="wenti-txt">{{$allArr[32].question}}</text>
 							</TIBANA>
-							<view class="danxuan-box " style="flex-wrap: wrap;">
-								<view class="danxuan " :class="currentG5==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG5"
+							<view class="danxuan-box chuizhi" style="flex-wrap: wrap;">
+								<view class="danxuan w100 justify-content" :class="currentG5==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG5"
 								 :key="index" @click="chooseDanXuanG5(index)">
 									<view>{{i.sign}}</view>
 									<text>{{i.txt}}</text>
 								</view>
 							</view>
 							<!-- <view class="line"></view> -->
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnC"></view>
+								<view class="xiayiti" @click="checkG5"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>	
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai3.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
 								<text class="wenti-txt">{{$allArr[33].question}}</text>
 							</TIBANA>
@@ -679,7 +707,7 @@
 							</view>
 							<view class="danxuan-box ">
 								<view class="shangyiti" @click="backBtnC"></view>
-								<view class="xiayiti" @click="checkG5G6"></view>
+								<view class="xiayiti" @click="checkG6"></view>
 							</view>
 						</view>
 					</swiper-item>
@@ -689,14 +717,24 @@
 							<TIBANA class="tibanA">
 								<view class="wenti-txt">{{$allArr[34].question}}</view>
 							</TIBANA>
-							<view class="danxuan-box " style="flex-wrap: wrap;">
-								<view class="danxuan " :class="currentG7==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG7"
+							<view class="danxuan-box chuizhi" style="flex-wrap: wrap;">
+								<view class="danxuan w100 justify-content" :class="currentG7==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG7"
 								 :key="index" @click="chooseDanXuanG7(index)">
 									<view>{{i.sign}}</view>
 									<text>{{i.txt}}</text>
 								</view>
 							</view>
 							<!-- <view class="line"></view> -->
+							
+							<view class="danxuan-box ">
+								<view class="shangyiti" @click="backBtnC"></view>
+								<view class="xiayiti" @click="checkG7"></view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>	
+						<view class="swiper-item">
+							<image src="../../static/bg-top-bankuai3.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
 								<text class="wenti-txt">{{$allArr[35].question}}</text>
 							</TIBANA>
@@ -709,7 +747,7 @@
 							</view>
 							<view class="danxuan-box ">
 								<view class="shangyiti" @click="backBtnC"></view>
-								<view class="xiayiti" @click="checkG7G8"></view>
+								<view class="xiayiti" @click="checkG8"></view>
 							</view>
 						</view>
 					</swiper-item>
@@ -900,7 +938,7 @@
 								<view class="wenti-txt">{{$allArr[45].question}}</view>
 							</TIBANA>
 							<view class="danxuan-box " style="flex-wrap: wrap;">
-								<view class="danxuan " :class="currentG18==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG18"
+								<view class="danxuan justify-content" :class="currentG18==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrG18"
 								 :key="index" @click="chooseDanXuanG18(index)">
 									<view>{{i.sign}}</view>
 									<text>{{i.txt}}</text>
@@ -987,8 +1025,8 @@
 							<TIBANA class="tibanA">
 								<text class="wenti-txt">{{$allArr[49].question}}</text>
 							</TIBANA>
-							<view class="danxuan-box justify-content" >
-								<view class="danxuan " :class="currentP1==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP1"
+							<view class="danxuan-box " >
+								<view class="danxuan  justify-content" :class="currentP1==index?'jianbian-active':'jianbian'" v-for="(i,index) in danxuanarrP1"
 								 :key="index" @click="chooseDanXuanP1(index)">
 									<view>{{i.sign}}</view>
 									<text>{{i.txt}}</text>
@@ -1044,7 +1082,7 @@
 									<text v-if="i.sign=='C'">其他胰肠吻合方法</text>
 									<text v-else>{{i.txt}}</text>
 									
-									<input type="text" value="" v-if="i.sign=='C'" class="xuanxiangbuchong" placeholder="请简述" v-model="i.txt"/>
+									<input type="text" value="" style="flex: 1;" v-if="i.sign=='C'" class="xuanxiangbuchong" placeholder="请简述" v-model="i.txt"/>
 								</view>
 							</view>
 							
@@ -1112,8 +1150,8 @@
 								</view>
 							</view>
 							
-							<view class="danxuan-box ">
-								<view class="shangyiti" @click="backBtnD"></view>
+							<view class="danxuan-box mg">
+								<!-- <view class="shangyiti" @click="backBtnD"></view> -->
 								<view class="xiayiti" @click="checkP7"></view>
 							</view>
 						</view>
@@ -1338,7 +1376,7 @@
 							</view>
 						</view>
 					</swiper-item>
-					<swiper-item>
+					<!-- <swiper-item>
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
@@ -1356,7 +1394,7 @@
 								<view class="xiayiti" @click="checkP19"></view>
 							</view>
 						</view>
-					</swiper-item>
+					</swiper-item> -->
 					<swiper-item>
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai4.png" mode="widthFix" class="pic"></image>
@@ -1380,7 +1418,7 @@
 						<view class="swiper-item">
 							<image src="../../static/bg-top-bankuai2.png" mode="widthFix" class="pic"></image>
 							<TIBANA class="tibanA">
-								<text class="wenti-txt">{{$allArr[69].question}}<br><text style="color: #808080;width: 100%;display: block;text-align: right;">（可多选）</text></text>
+								<text class="wenti-txt">{{$allArr[69].question}}<!-- <br><text style="color: #808080;width: 100%;display: block;text-align: right;">（可多选）</text> --></text>
 							</TIBANA>
 							<view class="danxuan-box chuizhi">
 								<view class="danxuan w100 justify-content jianbian" :class="{'jianbian-active':i.fuxuan}" v-for="(i,index) in danxuanarrP21"
@@ -1681,11 +1719,11 @@
 					},
 					{
 						sign: 'C',
-						txt: '40-100台'
+						txt: '41-100台'
 					},
 					{
 						sign: 'D',
-						txt: '100-200台'
+						txt: '101-200台'
 					},
 					{
 						sign: 'E',
@@ -1703,7 +1741,7 @@
 					},
 					{
 						sign: 'C',
-						txt: '40-100台'
+						txt: '41-100台'
 					},
 					{
 						sign: 'D',
@@ -1751,7 +1789,7 @@
 					},
 					{
 						sign: 'D',
-						txt: '>101台/年'
+						txt: '>100台/年'
 					}
 				],
 				danxuanarrB9:[
@@ -2091,7 +2129,7 @@
 					},
 					{
 						sign: 'C',
-						txt: '20-30分钟'
+						txt: '21-30分钟'
 					},
 					{
 						sign: 'D',
@@ -3559,6 +3597,16 @@
 				}
 				console.log(this.$allArr)
 			},
+			checkG1(){
+				if (this.$allArr[28].val) {
+					this.lunboCurrentC++
+				} else {
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+			},
 			chooseDanXuanG2(index) {
 				this.currentG2 = index
 				for (let s of this.$allArr) {
@@ -3568,8 +3616,8 @@
 				}
 				console.log(this.$allArr)
 			},
-			checkG1G2(){
-				if (this.$allArr[28].val && this.$allArr[29].val) {
+			checkG2(){
+				if (this.$allArr[29].val) {
 					this.lunboCurrentC++
 				} else {
 					uni.showModal({
@@ -3596,8 +3644,18 @@
 				}
 				console.log(this.$allArr)
 			},
-			checkG3G4(){
-				if (this.$allArr[30].val && this.$allArr[31].val) {
+			checkG3(){
+				if (this.$allArr[30].val ) {
+					this.lunboCurrentC++
+				} else {
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+			},
+			checkG4(){
+				if ( this.$allArr[31].val) {
 					this.lunboCurrentC++
 				} else {
 					uni.showModal({
@@ -3624,8 +3682,18 @@
 				}
 				console.log(this.$allArr)
 			},
-			checkG5G6(){
-				if (this.$allArr[32].val && this.$allArr[33].val) {
+			checkG5(){
+				if (this.$allArr[32].val ) {
+					this.lunboCurrentC++
+				} else {
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+			},
+			checkG6(){
+				if ( this.$allArr[33].val) {
 					this.lunboCurrentC++
 				} else {
 					uni.showModal({
@@ -3653,8 +3721,18 @@
 				}
 				console.log(this.$allArr)
 			},
-			checkG7G8(){
-				if (this.$allArr[34].val && this.$allArr[35].val) {
+			checkG7(){
+				if (this.$allArr[34].val ) {
+					this.lunboCurrentC++
+				} else {
+					uni.showModal({
+						content: '请选择答案',
+						showCancel: false
+					})
+				}
+			},
+			checkG8(){
+				if (this.$allArr[35].val) {
 					this.lunboCurrentC++
 				} else {
 					uni.showModal({
@@ -3935,7 +4013,7 @@
 					} else if(this.currentP2 == 1){
 						this.lunboCurrentD +=2
 					} else{
-						this.lunboCurrentD +=3
+						this.lunboCurrentD +=5
 					}
 					
 				} else {
@@ -3957,7 +4035,7 @@
 			},
 			checkP3(){
 				if (this.$allArr[51].val) {
-					this.lunboCurrentD+=2
+					this.lunboCurrentD+=4
 				} else {
 					uni.showModal({
 						content: '请选择答案',
@@ -3979,18 +4057,19 @@
 				console.log(this.$allArr)
 			},
 			checkP4(){
-				if(this.currentP4 == 2){
-					for (let s of this.$allArr) {
+				if(this.$allArr[52].val){
+					/* for (let s of this.$allArr) {
 						if (s.sid == 'P4') {
 							s.val = this.danxuanarrP4[2].txt
 						}
-					}
-				}
-				if (this.$allArr[52].val&&this.currentP4==1) {
+					} */
 					this.lunboCurrentD++
-				} else if(this.$allArr[52].val&&this.currentP4!=1){
-					this.lunboCurrentD+=2
-				} else {
+				}
+				// if (this.$allArr[52].val&&this.currentP4==1) {
+					
+				// } else if(this.$allArr[52].val&&this.currentP4!=1){
+					// this.lunboCurrentD+=2
+				else {
 					uni.showModal({
 						content: '请选择答案或者填写答案',
 						showCancel: false
@@ -4045,7 +4124,7 @@
 				}
 			},
 			backBtnD6(){
-				this.lunboCurrentD-=2
+				this.lunboCurrentD--
 			},
 			
 			
@@ -4527,6 +4606,10 @@
 				if(window.parent.saveSurvey){
 					console.log(this.$allArr)
 						window.parent.saveSurvey('胰腺问卷', this.$allArr,'胰十二指肠切除术后消化道重建全国调查' );
+						uni.showModal({
+							content:'提交成功',
+							showCancel:false
+						})
 					}else{
 						console.log(this.$allArr)
 						uni.showModal({
